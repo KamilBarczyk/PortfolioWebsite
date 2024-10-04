@@ -1,1 +1,67 @@
 /* GENERAL CSS */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85, 85, 85);
+}
+
+/* TRANSITION */
+
+a,
+.navbar-btn {
+    transition: all 300ms ease;
+}
+
+/* NAVBAR MENU */
+
+#main-nav,
+.navbar-menu {
+    display: flex;
+}
+
+#main-nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.navbar-menu {
+    gap: 2em;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+.navbar-logo {
+    font-size: 2rem;
+}
+
+.navbar-logo:hover {
+    cursor: default;
+}
