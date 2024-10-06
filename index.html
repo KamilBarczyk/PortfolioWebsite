@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Kamil Barczyk, showcasing experience, projects, and contact information.">
+    <meta name="description"
+        content="Portfolio of Kamil Barczyk, showcasing experience, projects, and contact information.">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
@@ -39,6 +40,31 @@
             </div>
         </div>
     </nav>
+
+    <section id="profile">
+        <div class="profile-picture">
+            <img src="./assets/avatar.png" alt="Kamil Barczyk profile picture">
+        </div>
+        <div class="profile-details">
+            <p class="intro-text">Hello, I'm</p>
+            <h1 class="profile-name">Kamil Barczyk</h1>
+            <p class="profile-role">Frontend Developer</p>
+            <div class="btn-profile">
+                <button class="btn btn-primary" onclick="window.open('./assets/CV_Kamil_Barczyk.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-secondary" onclick="location.href='./contact'">
+                    Contact
+                </button>
+            </div>
+            <div class="social-links">
+                <img src="./assets/linkedin.png" alt="My Linkedin profile" class="social-icon"
+                    onclick="location.href='https://www.linkedin.com/in/kamil-barczyk-1b411a1b2/'">
+                <img src="./assets/github.png" alt="My Github profile" class="social-icon"
+                    onclick="location.href='https://github.com/KamilBarczyk'">
+            </div>
+        </div>
+    </section>
 
     <!-- <header>
         <h1>Hi there!</h1>
