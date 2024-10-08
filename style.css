@@ -203,10 +203,17 @@ social-links {
 
 /* ICONS */
 
-.social-icon {
+.social-icon, 
+.about-info-icon {
     cursor: pointer;
     height: 2rem;
 }
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+  }
 
 /* BUTTONS */
 
@@ -254,3 +261,55 @@ social-links {
     background: rgb(53, 53, 53);
     color: white;
 }
+
+/* ABOUT SECTION */
+
+#about {
+    position: relative;
+}
+
+.about-intro {
+    text-align: center;
+
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers,
+.about-details {
+    display: flex;
+}
+
+.about-image {
+    border-radius: 2rem;
+}
+
+.about-info-card {
+        padding: 1.5rem;
+        flex: 1;
+        background: white;
+        border-radius: 2rem;
+        border: rgb(53, 53, 53) 0.1rem solid;
+        border-color: rgb(163, 163, 163);
+        text-align: center;
+}
+
+.about-section-container {
+    display: flex;
+    gap: 4rem;
+    height: 80%;
+}
+
+  .about-title {
+    font-size: 3rem;
+    text-align: center;
+  }
