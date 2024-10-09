@@ -2,110 +2,207 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Portfolio of Kamil Barczyk, showcasing experience, projects, and contact information.">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio of Kamil Barczyk, showcasing experience, projects, and contact information.">
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
 </head>
 
 <body>
-    <nav id="main-nav">
-        <div class="navbar-logo">Kamil Barczyk</div>
-        <ul class="navbar-menu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+  <nav id="main-nav">
+    <div class="navbar-logo">Kamil Barczyk</div>
+    <ul class="navbar-menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="navbar-logo">Kamil Barczyk</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <ul>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </ul>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
-    <nav id="hamburger-nav">
-        <div class="navbar-logo">Kamil Barczyk</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <ul>
-                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <section id="profile">
+    <div class="profile-picture">
+      <img src="./assets/avatar.png" alt="Kamil Barczyk profile picture">
+    </div>
+    <div class="profile-details">
+      <p class="intro-text">Hello, I'm</p>
+      <h1 class="profile-name">Kamil Barczyk</h1>
+      <p class="profile-role">Frontend Developer</p>
+      <div class="btn-profile">
+        <button class="btn btn-primary" onclick="window.open('./assets/CV_Kamil_Barczyk.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-secondary" onclick="location.href='./contact'">
+          Contact
+        </button>
+      </div>
+      <div class="social-links">
+        <img src="./assets/linkedin.png" alt="My Linkedin profile" class="social-icon"
+          onclick="location.href='https://www.linkedin.com/in/kamil-barczyk-1b411a1b2/'">
+        <img src="./assets/github.png" alt="My Github profile" class="social-icon"
+          onclick="location.href='https://github.com/KamilBarczyk'">
+      </div>
+    </div>
+  </section>
 
-    <section id="profile">
-        <div class="profile-picture">
-            <img src="./assets/avatar.png" alt="Kamil Barczyk profile picture">
-        </div>
-        <div class="profile-details">
-            <p class="intro-text">Hello, I'm</p>
-            <h1 class="profile-name">Kamil Barczyk</h1>
-            <p class="profile-role">Frontend Developer</p>
-            <div class="btn-profile">
-                <button class="btn btn-primary" onclick="window.open('./assets/CV_Kamil_Barczyk.pdf')">
-                    Download CV
-                </button>
-                <button class="btn btn-secondary" onclick="location.href='./contact'">
-                    Contact
-                </button>
-            </div>
-            <div class="social-links">
-                <img src="./assets/linkedin.png" alt="My Linkedin profile" class="social-icon"
-                    onclick="location.href='https://www.linkedin.com/in/kamil-barczyk-1b411a1b2/'">
-                <img src="./assets/github.png" alt="My Github profile" class="social-icon"
-                    onclick="location.href='https://github.com/KamilBarczyk'">
-            </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <p class="about-intro">Get To Know More</p>
-        <h1 class="title about-title">About Me</h1>
-        <div class="about-section-container">
-          <div class="profile-picture">
-            <img src="./assets/avatar.png" alt="Profile picture" class="about-image" />
+  <section id="about">
+    <p class="about-intro">Get To Know More</p>
+    <h1 class="title about-title">About Me</h1>
+    <div class="about-section-container">
+      <div class="profile-picture">
+        <img src="./assets/avatar.png" alt="Profile picture" class="about-image" />
+      </div>
+      <div class="about-details">
+        <div class="about-containers">
+          <div class="about-info-card">
+            <img src="./assets/experience.png" alt="Experience icon" class="about-info-icon" />
+            <h3>Experience</h3>
+            <p>3+ years <br /> Frontend Development</p>
           </div>
-          <div class="about-details">
-            <div class="about-containers">
-              <div class="about-info-card">
-                <img src="./assets/experience.png" alt="Experience icon" class="about-info-icon" />
-                <h3>Experience</h3>
-                <p>3+ years <br /> Frontend Development</p>
-              </div>
-              <div class="about-info-card">
-                <img src="./assets/education.png" alt="Education icon" class="about-info-icon" />
-                <h3>Education</h3>
-                <p>University of Technology Opole <br /> Master's degree</p>
-              </div>
-            </div>
-            <div class="text-container about-text">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias libero fuga vel eum quaerat mollitia
-                possimus quia dicta excepturi laudantium dignissimos facere eos reprehenderit maxime, tenetur commodi non
-                qui quam.</p>
-            </div>
+          <div class="about-info-card">
+            <img src="./assets/education.png" alt="Education icon" class="about-info-icon" />
+            <h3>Education</h3>
+            <p>University of Technology Opole <br /> Master's degree</p>
           </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="arrow about-info-icon" onclick="location.href='./#experience'" />
-      </section>
+        <div class="text-container about-text">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias libero fuga vel eum quaerat mollitia
+            possimus quia dicta excepturi laudantium dignissimos facere eos reprehenderit maxime, tenetur commodi non
+            qui quam.</p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="arrow about-info-icon"
+      onclick="location.href='./#experience'" />
+  </section>
 
-    <!-- <header>
-        <h1>Hi there!</h1>
-    </header>
-    <main>
-        <p>Welcome to my Portfolio Website.</p>
-    </main>
-    <footer>
-        <p>Copyright &#169; 2024 Kamil Barczyk. All Rights Reserved.</p>
-    </footer> -->
-    <script src="script.js"></script>
+  <section id="experience">
+    <p class="experience-intro">Explore My</p>
+    <h1 class="title experience-title">Experience</h1>
+    <div class="experience-section-container">
+      <div class="experience-content">
+        <div class="experience-category">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="skills-list">
+            <article class="skill-card">
+              <img src="./assets/checkmark.png" alt="Experience icon" class="skill-icon" />
+              <div>
+                <h3 class="skill-name">HTML</h3>
+                <p class="skill-level">6 Years Expert</p>
+              </div>
+            </article>
+            <article class="skill-card">
+              <img src="./assets/checkmark.png" alt="Experience icon" class="skill-icon" />
+              <div>
+                <h3 class="skill-name">CSS</h3>
+                <p class="skill-level">6 Years Expert</p>
+              </div>
+            </article>
+            <article class="skill-card">
+              <img src="./assets/checkmark.png" alt="Experience icon" class="skill-icon" />
+              <div>
+                <h3 class="skill-name">JavaScript</h3>
+                <p class="skill-level">4 Years Expert</p>
+              </div>
+            </article>
+            <article class="skill-card">
+              <img src="./assets/checkmark.png" alt="Experience icon" class="skill-icon" />
+              <div>
+                <h3 class="skill-name">TypeScript</h3>
+                <p class="skill-level">3 Years Expert</p>
+              </div>
+            </article>
+            <article class="skill-card">
+              <img src="./assets/checkmark.png" alt="Experience icon" class="skill-icon" />
+              <div>
+                <h3 class="skill-name">Angular</h3>
+                <p class="skill-level">2 Years Expert</p>
+              </div>
+            </article>
+            <article class="skill-card">
+              <img src="./assets/checkmark.png" alt="Experience icon" class="skill-icon" />
+              <div>
+                <h3 class="skill-name">Vue</h3>
+                <p class="skill-level">2 Years Expert</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="experience-category">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="skills-list">
+            <article class="skill-card">
+              <img src="./assets/checkmark.png" alt="Experience icon" class="skill-icon" />
+              <div>
+                <h3 class="skill-name">Node.js</h3>
+                <p class="skill-level">3 Years Expert</p>
+              </div>
+            </article>
+            <article class="skill-card">
+              <img src="./assets/checkmark.png" alt="Experience icon" class="skill-icon" />
+              <div>
+                <h3 class="skill-name">Rest API</h3>
+                <p class="skill-level">3 Years Expert</p>
+              </div>
+            </article>
+            <article class="skill-card">
+              <img src="./assets/checkmark.png" alt="Experience icon" class="skill-icon" />
+              <div>
+                <h3 class="skill-name">Git</h3>
+                <p class="skill-level">6 Years Expert</p>
+              </div>
+            </article>
+            <article class="skill-card">
+              <img src="./assets/checkmark.png" alt="Experience icon" class="skill-icon" />
+              <div>
+                <h3 class="skill-name">SCRUM</h3>
+                <p class="skill-level">3 Years Expert</p>
+              </div>
+            </article>
+            <article class="skill-card">
+              <img src="./assets/checkmark.png" alt="Experience icon" class="skill-icon" />
+              <div>
+                <h3 class="skill-name">Bitbucket</h3>
+                <p class="skill-level">2 Years Expert</p>
+              </div>
+            </article>
+            <article class="skill-card">
+              <img src="./assets/checkmark.png" alt="Experience icon" class="skill-icon" />
+              <div>
+                <h3 class="skill-name">Test JEST</h3>
+                <p class="skill-level">3 Years Expert</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="arrow experience-arrow"
+      onclick="location.href='./#projects'" />
+  </section>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
