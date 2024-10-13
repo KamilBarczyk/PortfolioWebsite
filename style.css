@@ -211,6 +211,10 @@ social-links {
     height: 2rem;
 }
 
+.projects-navigation-arrow {
+    bottom: 7rem;
+}
+
 .arrow {
     position: absolute;
     right: -5rem;
@@ -491,4 +495,81 @@ social-links {
 .project-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* CONTACT */
+
+#contact-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-intro-text {
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.contact-info-wrapper {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-item p {
+    font-size: larger;
+}
+
+.contact-icon {
+    height: 2rem;
+}
+
+.email-icon {
+    height: 2.5rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p {
+    text-align: center;
+}
+
+nav,
+.footer-nav-list {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.footer-nav-list {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
 }
