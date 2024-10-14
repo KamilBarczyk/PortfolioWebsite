@@ -1,9 +1,134 @@
-@media screen and (max-width: 1200px) {
-    #main-nav {
-        display: none;
-    }
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
 
-    #hamburger-nav {
-        display: flex;
-    }
+  .about-containers,
+  .experience-content,
+  .projects-grid-container {
+    flex-wrap: wrap;
+  }
+
+  #contact-section,
+  #projects {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #main-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+
+  #experience,
+  .experience-section-container,
+  .projects-content-wrapper {
+    margin-top: 2rem;
+  }
+
+  #profile,
+  .about-section-container {
+    display: block;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  section,
+  .about-section-container {
+    height: fit-content;
+  }
+
+  section {
+    margin: 0 5%;
+  }
+
+  .about-image {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+
+  .about-containers,
+  .experience-content,
+  .projects-grid-container {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  #contact-section,
+  footer {
+    height: 40vh;
+  }
+
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+
+  article {
+    font-size: 1rem;
+  }
+
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+
+  .about-containers,
+  .experience-content,
+  .projects-grid-container,
+  .contact-info-wrapper,
+  .btn-profile {
+    flex-wrap: wrap;
+  }
+
+  .contact-info-wrapper {
+    margin: 0;
+  }
+
+  .contact-info-wrapper p,
+  .footer-nav-list li a {
+    font-size: 1rem;
+  }
+
+  .experience-title {
+    font-size: 1.25rem;
+  }
+
+  .navbar-logo {
+    font-size: 1.5rem;
+  }
+
+  .footer-nav-list {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .about-image {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .text-container {
+    text-align: justify;
+  }
 }
