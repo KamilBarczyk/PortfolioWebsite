@@ -49,7 +49,7 @@
     margin: 0 5%;
   }
 
-  .about-image {
+  .profile-picture {
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
@@ -63,7 +63,6 @@
 }
 
 @media screen and (max-width: 600px) {
-
   #contact-section,
   footer {
     height: 40vh;
@@ -87,20 +86,23 @@
   .experience-content,
   .projects-grid-container,
   .contact-info-wrapper,
-  .btn-profile {
+  .btn-profile,
+  .project-action-buttons {
     flex-wrap: wrap;
   }
 
-  .contact-info-wrapper {
+  .contact-item {
     margin: 0;
   }
 
-  .contact-info-wrapper p,
+  .contact-item p,
+  .navbar-menu li a,
   .footer-nav-list li a {
     font-size: 1rem;
   }
 
-  .experience-title {
+  .experience-sub-title,
+  .project-heading {
     font-size: 1.25rem;
   }
 
@@ -108,23 +110,28 @@
     font-size: 1.5rem;
   }
 
-  .footer-nav-list {
+  .footer-nav-list,
+  .navbar-menu {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
   }
 
-  .about-image {
+  .profile-picture {
     width: auto;
     height: 46vw;
     justify-content: center;
   }
 
-  .section__text__p2 {
+  .profile-role {
     font-size: 1.25rem;
   }
 
-  .title {
+  .profile-name,
+  .about-title,
+  .experience-title,
+  .projects-section-title,
+  .contact-title {
     font-size: 2rem;
   }
 
