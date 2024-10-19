@@ -206,7 +206,8 @@ social-links {
 .social-icon,
 .about-info-icon,
 .experience-arrow,
-.projects-navigation-arrow {
+.projects-navigation-arrow,
+.theme-icon {
     cursor: pointer;
     height: 2rem;
 }
