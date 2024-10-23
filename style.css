@@ -37,8 +37,13 @@
     padding: 0;
 }
 
+h3 {
+    color: var(--secondary-color);
+}
+
 body {
     font-family: 'Poppins', Helvetica, sans-serif;
+    background-color: var(--background-color);
 }
 
 html {
@@ -46,7 +51,7 @@ html {
 }
 
 p {
-    color: rgb(85, 85, 85);
+    color: var(--secondary-color-2)
 }
 
 /* TRANSITION */
@@ -62,12 +67,12 @@ a,
 #hamburger-nav,
 .navbar-menu {
     display: flex;
+    align-items: center;
 }
 
 #main-nav,
 #hamburger-nav {
     justify-content: space-around;
-    align-items: center;
     height: 17vh;
 }
 
@@ -76,6 +81,13 @@ a,
     list-style: none;
     font-size: 1.5rem;
 }
+
+nav li:last-child {
+    width: max-content;
+    display: flex;
+    margin: auto;
+    padding: 15px 10px;
+  }
 
 a {
     color: black;
@@ -151,7 +163,7 @@ a:hover {
 }
 
 .menu-links.open {
-    max-height: 300px;
+    max-height: 330px;
 }
 
 .hamburger-icon.open span:nth-child(1) {
