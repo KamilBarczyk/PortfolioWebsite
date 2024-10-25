@@ -82,7 +82,7 @@ a,
     font-size: 1.5rem;
 }
 
-nav li:last-child {
+nav img {
     width: max-content;
     display: flex;
     margin: auto;
