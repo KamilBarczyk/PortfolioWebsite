@@ -10,7 +10,7 @@
     flex-wrap: wrap;
   }
 
-  #contact-section,
+  #contact,
   #projects {
     height: fit-content;
   }
@@ -75,7 +75,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  #contact-section,
+  #contact,
   footer {
     height: 40vh;
   }
