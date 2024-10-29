@@ -539,7 +539,7 @@ social-links {
 
 /* CONTACT */
 
-#contact-section {
+#contact {
     display: flex;
     justify-content: center;
     flex-direction: column;
