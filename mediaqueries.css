@@ -103,6 +103,10 @@
     flex-wrap: wrap;
   }
 
+  .contact-item:first-of-type {
+    margin-right: 1rem;
+  }
+  
   .contact-item {
     margin: 0;
   }
