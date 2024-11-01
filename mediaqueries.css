@@ -107,6 +107,10 @@
     margin: 0;
   }
 
+  div.contact-item {
+    margin-right: 1rem;
+  }
+
   .contact-item p,
   .navbar-menu li a,
   .footer-nav-list li a {
